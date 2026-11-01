@@ -1,4 +1,14 @@
 node_modules/
+.data/
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+**/.next/
+**/.expo/
+**/next-env.d.ts
+*.tsbuildinfo
 dist/
 coverage/
 .env
