@@ -1,0 +1,7 @@
+export enum RentalApplicationStatus {
+  SUBMITTED = 'SUBMITTED',
+  UNDER_REVIEW = 'UNDER_REVIEW',
+  APPROVED = 'APPROVED',
+  DECLINED = 'DECLINED',
+  WITHDRAWN = 'WITHDRAWN',
+}

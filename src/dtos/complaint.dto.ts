@@ -1,4 +1,4 @@
-import type { ComplaintStatus } from '../enums/complaint-status.enum.js';
+import type { ComplaintStatus } from '../enums/complaintStatus.enum.js';
 
 export interface OpenComplaintRequestDto {
   propertyId: string;

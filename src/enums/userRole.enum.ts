@@ -1,0 +1,33 @@
+export enum UserRole {
+  STUDENT = 'STUDENT',
+  LANDLORD = 'LANDLORD',
+  BUSINESS_ADVERTISER = 'BUSINESS_ADVERTISER',
+  CARETAKER = 'CARETAKER',
+  SCHOOL_ADMIN = 'SCHOOL_ADMIN',
+  SUPER_ADMIN = 'SUPER_ADMIN',
+  VERIFICATION_ADMIN = 'VERIFICATION_ADMIN',
+  SAFETY_ADMIN = 'SAFETY_ADMIN',
+  INSPECTION_ADMIN = 'INSPECTION_ADMIN',
+  ACCOUNT_ADMIN = 'ACCOUNT_ADMIN',
+}
+
+export const ADMIN_USER_ROLES = [
+  UserRole.SUPER_ADMIN,
+  UserRole.SCHOOL_ADMIN,
+  UserRole.VERIFICATION_ADMIN,
+  UserRole.SAFETY_ADMIN,
+  UserRole.INSPECTION_ADMIN,
+  UserRole.ACCOUNT_ADMIN,
+] as const;
+
+export const CREATABLE_ADMIN_USER_ROLES = [
+  UserRole.SCHOOL_ADMIN,
+  UserRole.VERIFICATION_ADMIN,
+  UserRole.SAFETY_ADMIN,
+  UserRole.INSPECTION_ADMIN,
+  UserRole.ACCOUNT_ADMIN,
+] as const;
+
+export function isAdminUserRole(role: UserRole): boolean {
+  return (ADMIN_USER_ROLES as readonly UserRole[]).includes(role);
+}

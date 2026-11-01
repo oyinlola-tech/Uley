@@ -1,0 +1,11 @@
+.logo { display: inline-flex; width: fit-content; flex: 0 0 auto; align-items: center; gap: 9px; color: var(--color-ink); }
+.mark { display: block; width: 36px; height: 36px; }
+.wordmark { font: 800 25px/1 var(--font-display); letter-spacing: -0.085em; }
+.wordmark span { color: var(--color-primary); }
+.inverse { color: #fff; }
+.inverse .wordmark span { color: var(--color-citrus); }
+
+@media (max-width: 760px) {
+  .mark { width: 33px; height: 33px; }
+  .wordmark { font-size: 23px; }
+}

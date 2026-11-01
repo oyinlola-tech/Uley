@@ -1,0 +1,32 @@
+.page { display: grid; min-height: 100svh; align-items: center; padding: 30px 28px; background: var(--color-paper); }
+.inner { width: min(100%, 1160px); margin-inline: auto; }
+.layout { display: grid; grid-template-columns: .83fr 1.17fr; align-items: center; gap: clamp(24px, 5vw, 76px); margin-top: 30px; }
+.message { position: relative; z-index: 1; padding-block: 25px; }
+.eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 19px; color: var(--color-trust-green); font: 500 9px/1.5 var(--font-label); letter-spacing: .1em; }
+.message h1 { max-width: 500px; margin: 0; color: var(--color-ink); font: 720 clamp(43px, 5.5vw, 70px)/1.02 var(--font-display); letter-spacing: -.065em; }
+.message h1 span { color: var(--color-primary); }
+.description { max-width: 410px; margin: 18px 0 0; color: var(--color-muted-ink); font-size: 14px; line-height: 1.8; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 25px; }
+.primaryAction { display: inline-flex; min-height: 52px; align-items: center; gap: 18px; padding: 0 10px 0 17px; border-radius: 7px; background: var(--color-primary-action); color: #fff; font-size: 12px; font-weight: 700; transition: transform 150ms ease, background 150ms ease; }
+.primaryAction:hover { transform: translateY(-2px); background: var(--color-primary-action-hover); }
+.primaryAction svg { width: 34px; height: 34px; padding: 8px; border-radius: 4px; background: #ffffff24; }
+.secondaryAction { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; color: var(--color-muted-ink); font-size: 11px; font-weight: 600; }
+.secondaryAction:hover { color: var(--color-primary); }
+.artwork { overflow: hidden; border-radius: 50% 50% 10px 10px; }
+.illustration { display: block; width: 100%; height: auto; --scene-board: #e9eff9; --scene-paper: #fff8df; --scene-line: #a5b4ca; --scene-accent: #2949d8; --scene-alert: #d27a4e; --scene-ground: #c9e1c7; --scene-ground-line: #5f9a72; --scene-sun: #f4ce54; --scene-tag-ink: #fff; }
+:global(:root[data-theme="dark"]) .illustration { --scene-board: #243144; --scene-paper: #d7d1bd; --scene-line: #8797b0; --scene-accent: #7790f0; --scene-alert: #e09572; --scene-ground: #294437; --scene-ground-line: #5f9a72; --scene-sun: #f5d96e; --scene-tag-ink: #fff; }
+.footerNote { margin: 24px 0 0; color: var(--color-tertiary); font: 500 8px/1.5 var(--font-label); letter-spacing: .1em; }
+.footerNote span { padding-inline: 5px; color: var(--color-primary); }
+@media (max-width: 760px) {
+  .page { align-items: start; padding: 22px 20px 28px; }
+  .layout { grid-template-columns: 1fr; gap: 17px; margin-top: 23px; }
+  .artwork { order: -1; border-radius: 48% 48% 8px 8px; }
+  .message { padding-block: 6px 0; }
+  .eyebrow { margin-bottom: 13px; }
+  .message h1 { max-width: 450px; font-size: clamp(44px, 11.8vw, 64px); }
+  .description { margin-top: 13px; font-size: 13px; }
+  .actions { gap: 8px 14px; margin-top: 18px; }
+  .primaryAction { width: 100%; justify-content: space-between; }
+  .footerNote { margin-top: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .primaryAction { transition-duration: .01ms; } }

@@ -1,0 +1,9 @@
+.figure{width:100%;margin:0;padding:17px 17px 12px;overflow:hidden;border:1px solid var(--color-line);background:var(--color-paper)}
+.caption{display:flex;align-items:center;gap:8px;color:var(--color-muted-strong);font:500 8px/1.4 var(--font-label);letter-spacing:.055em}
+.caption>span:last-child{margin-left:auto;color:var(--color-tertiary)}
+.routeDot{width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:var(--color-illustration-leaf)}
+.art{display:block;width:100%;height:auto;margin-top:11px}
+.figure figcaption{margin-top:8px;color:var(--color-muted-ink);font-size:9px;line-height:1.5}
+:global(:root[data-theme="dark"]) .figure{border-color:var(--color-line);background:var(--color-paper)}
+:global(:root[data-theme="dark"]) .caption,:global(:root[data-theme="dark"]) .figure figcaption{color:var(--color-muted-strong)}
+@media(max-width:600px){.figure{padding:13px 13px 9px}.caption{font-size:7px}.figure figcaption{font-size:8px}}

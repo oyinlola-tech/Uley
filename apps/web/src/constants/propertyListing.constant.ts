@@ -1,0 +1,25 @@
+export const PROPERTY_LISTING_COPY = {
+  eyebrow: 'A clearer way to find your place',
+  title: 'Homes near campus, with the details up front.',
+  description: 'Search published off-campus homes, compare available units, and see what has been checked before you arrange a visit.',
+  searchLabel: 'Search homes',
+  searchPlaceholder: 'Area, neighbourhood or property',
+  cityLabel: 'City',
+  rentPeriodLabel: 'Rent period',
+  maximumRentPrefix: 'Maximum rent',
+  clearFiltersLabel: 'Clear filters',
+  cityPlaceholder: 'e.g. Ibadan',
+  maximumRentLabel: 'Maximum rent for this period',
+  bedroomsLabel: 'Bedrooms',
+  applyFilters: 'Find homes',
+  useNearbyLocation: 'Use my location',
+  nearbyLocationHelp: 'Share your location once to find homes within 10 km. Your coordinates are not shown to landlords.',
+  locationPermissionDenied: 'Location access was not granted. You can keep searching by area.',
+  resultsLabel: 'Homes you can explore',
+  emptyTitle: 'No published homes match those filters yet.',
+  emptyDetail: 'Try another area or widen your budget. New verified homes will appear here when they are published.',
+  loading: 'Finding available homes…',
+  retry: 'Try again',
+} as const;
+
+export const NIGERIAN_NAIRA_FORMATTER = new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN', maximumFractionDigits: 0 });

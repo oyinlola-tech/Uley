@@ -1,0 +1,15 @@
+export const ADMIN_NAVIGATION_LINKS = [
+  ['/admin', 'Overview'],
+  ['/admin/reviews', 'Verifications'],
+  ['/admin/home-reviews', 'Home reviews'],
+  ['/admin/reports', 'Property reports'],
+  ['/admin/complaints', 'Housing complaints'],
+  ['/admin/chat-moderation', 'Chat safety'],
+  ['/admin/sponsored-campaigns', 'Sponsored homes'],
+  ['/admin/ads', 'Community ads'],
+  ['/admin/inspections', 'Inspections'],
+  ['/admin/properties', 'Listings'],
+  ['/admin/accounts', 'Accounts'],
+  ['/admin/staff', 'Staff'],
+  ['/admin/logs', 'Logs'],
+] as const;

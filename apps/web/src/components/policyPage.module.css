@@ -1,0 +1,21 @@
+.page { width: min(940px, calc(100% - var(--page-gutter) * 2)); margin-inline: auto; padding: 62px 0 110px; }
+.hero { padding: 34px 0 40px; border-bottom: 1px solid var(--color-line); }
+.eyebrow { margin: 0 0 14px; color: var(--color-trust-green); font: 600 10px/1.4 var(--font-label); letter-spacing: .12em; }
+.hero h1 { max-width: 760px; margin: 0; font: 760 clamp(42px, 6vw, 70px)/.98 var(--font-display); letter-spacing: -.065em; }
+.lead { max-width: 720px; margin: 20px 0 0; color: var(--color-muted-ink); font-size: 15px; line-height: 1.8; }
+.updated { margin-top: 18px; color: var(--color-muted-ink); font: 500 10px/1.5 var(--font-label); }
+.notice { margin: 24px 0 0; padding: 17px 19px; border-left: 3px solid var(--color-citrus); background: var(--color-surface); color: var(--color-ink); font-size: 12px; line-height: 1.7; }
+.sections { display: grid; gap: 0; }
+.section { padding: 28px 0; border-bottom: 1px solid var(--color-line); }
+.section h2 { margin: 0; font: 700 23px/1.25 var(--font-display); letter-spacing: -.035em; }
+.section p,.section li { color: var(--color-muted-ink); font-size: 13px; line-height: 1.8; }
+.section p { max-width: 790px; margin: 11px 0 0; }
+.section ul { display: grid; gap: 7px; max-width: 800px; margin: 13px 0 0; padding-left: 20px; }
+.section a { color: var(--color-primary); text-underline-offset: 3px; }
+.grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin-top: 23px; }
+.card { padding: 20px; border: 1px solid var(--color-line); background: var(--color-surface); }
+.card h3 { margin: 0; font: 650 17px/1.3 var(--font-display); }
+.card p { margin: 8px 0 0; color: var(--color-muted-ink); font-size: 12px; line-height: 1.7; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.actions a,.actions button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 0 16px; border: 0; background: var(--color-primary-action); color: #fff; font: 600 11px/1.4 var(--font-label); text-decoration: none; cursor: pointer; }
+@media(max-width:650px) { .page { padding-top: 34px; } .grid { grid-template-columns: 1fr; } .section { padding: 23px 0; } }

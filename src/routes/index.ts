@@ -1,6 +1,9 @@
-import type { FastifyInstance } from 'fastify';
-import { registerHealthRoutes } from './health.routes.js';
-
-export async function registerApplicationRoutes(fastifyApplication: FastifyInstance): Promise<void> {
-  await fastifyApplication.register(registerHealthRoutes, { prefix: '/api/v1' });
-}
+export { registerApplicationRoutes } from './application.routes.js';
+export { registerUserAdvertisementRoutes } from './userAdvertisement.routes.js';
+export { registerAuthenticationRoutes } from './auth.routes.js';
+export { registerHealthRoutes } from './health.routes.js';
+export { registerPropertyRoutes } from './property.routes.js';
+export { registerManagementRoutes } from './management.routes.js';
+export { registerAdminRoutes } from './admin.routes.js';
+export { registerUniversityRoutes } from './university.routes.js';
+export { registerRentalApplicationRoutes } from './rentalApplication.routes.js';

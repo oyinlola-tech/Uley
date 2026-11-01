@@ -1,0 +1,17 @@
+export const COMPLAINT_LIMITS = {
+  descriptionMinimumLength: 20,
+  descriptionMaximumLength: 3000,
+  messageMaximumLength: 3000,
+  resolutionMinimumLength: 10,
+  resolutionMaximumLength: 1500,
+  pageSize: 30,
+  messageRateLimitMaximum: 20,
+  messageRateLimitWindowMilliseconds: 60_000,
+  createRateLimitMaximum: 5,
+  createRateLimitWindowMilliseconds: 60 * 60_000,
+  evidenceVideoMaximumBytes: 20 * 1024 * 1024,
+  evidenceVideoMaximumDurationSeconds: 90,
+  evidenceVideoMaximumCount: 3,
+  evidenceVideoUploadRateLimitMaximum: 5,
+  evidenceVideoUploadRateLimitWindowMilliseconds: 60 * 60_000,
+} as const;

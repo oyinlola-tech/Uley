@@ -1,0 +1,15 @@
+export const WEB_RENTAL_APPLICATION_COPY = {
+  studentHeading: 'Your applications, all in one place.',
+  landlordHeading: 'A clear view of every applicant.',
+  studentDescription: 'Apply after a completed visit, follow the landlord’s decision, and track move-in confirmation here.',
+  landlordDescription: 'Review applications from students who completed a visit. Approving starts the move-in confirmation step; it does not mark the home occupied.',
+  studentEmpty: 'No applications yet. Complete a visit and tell us you are interested to apply.',
+  landlordEmpty: 'No applications yet. New applications arrive after students complete a visit.',
+  submitted: 'Application sent to the landlord.',
+  approved: 'Application approved. Confirm the move-in after agreement and payment.',
+  declined: 'Application declined.',
+  underReview: 'Student notified that the application is under review.',
+  withdrawn: 'Application withdrawn.',
+  moveInConfirmed: 'Preferred move-in date',
+  applicationNote: 'Introduce yourself and share anything relevant to your application.',
+} as const;
