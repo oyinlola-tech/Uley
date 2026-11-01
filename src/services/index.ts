@@ -1,3 +1,14 @@
 export * as AuthenticationServiceContracts from './auth/index.js';
 export * as PropertyServiceContracts from './properties/index.js';
 export * as ComplaintServiceContracts from './complaints/index.js';
+export * as UniversityServiceContracts from './universities/index.js';
+export * as InspectionServiceContracts from './inspections/index.js';
+export * as ApplicationServiceContracts from './applications/index.js';
+export { createRentalApplication, respondToRentalApplication, withdrawRentalApplication } from './applications/index.js';
+export { listMyRentalApplications, listLandlordApplications } from './applications/index.js';
+export { changeLandlordUnitAvailability, createEligiblePropertyReview, reviewHomeReview, respondToOccupancyRequest } from './inspections/index.js';
+export { getPublicHomeReviews, getReviewModerationQueue, listLandlordOccupancies, listMyOccupancies, requestInspectionDateChange, answerInspectionDateChange, reportMissedInspection, recordInspectionFeedback } from './inspections/index.js';
+export * as ConversationServiceContracts from './conversations/index.js';
+export * as SponsoredCampaignServiceContracts from './sponsoredCampaigns/index.js';
+export * as UserAdvertisementServiceContracts from './userAdvertisements/index.js';
+export * as CaretakerServiceContracts from './caretakers/index.js';

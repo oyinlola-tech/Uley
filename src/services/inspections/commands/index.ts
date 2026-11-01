@@ -1,1 +1,13 @@
-// Write use cases for inspections; CQRS command side.
+export { requestPropertyInspection } from './requestInspection.command.js';
+export { respondToInspectionRequest } from './respondToInspection.command.js';
+export { startInspectionLocationShare } from './startInspectionLocationShare.command.js';
+export { updateInspectionLocation } from './updateInspectionLocation.command.js';
+export { stopInspectionLocationShare } from './stopInspectionLocationShare.command.js';
+export { requestInspectionDateChange } from './requestInspectionReschedule.command.js';
+export { answerInspectionDateChange } from './respondToInspectionReschedule.command.js';
+export { reportMissedInspection } from './markInspectionMissed.command.js';
+export { recordInspectionFeedback } from './submitInspectionFeedback.command.js';
+export { respondToOccupancyRequest } from './respondToOccupancy.command.js';
+export { changeLandlordUnitAvailability } from './changeUnitAvailability.command.js';
+export { createEligiblePropertyReview } from './createHomeReview.command.js';
+export { reviewHomeReview } from './reviewHomeReview.command.js';

@@ -1,1 +1,3 @@
-export type { GetCurrentUserQuery } from './get-current-user.query.js';
+export type { GetCurrentUserQuery } from './getCurrentUser.query.js';
+export { getAuthenticatedUser } from './getCurrentUser.query.js';
+export { verifyAuthenticatedSession } from './verifyAuthenticatedSession.query.js';

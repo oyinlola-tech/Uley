@@ -1,1 +1,1 @@
-// Read use cases for applications; CQRS query side.
+export { listMyRentalApplications, listLandlordApplications } from './listRentalApplications.query.js';

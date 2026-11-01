@@ -1,1 +1,2 @@
-// Student application submission and landlord decision use cases.
+export { createRentalApplication, respondToRentalApplication, withdrawRentalApplication } from './commands/index.js';
+export { listMyRentalApplications, listLandlordApplications } from './queries/index.js';
