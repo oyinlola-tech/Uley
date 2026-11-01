@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Uley",
+    "slug": "uley",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "uley",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Uley to use your location once to find nearby accommodation and, if you choose, share it during an inspection."
+        }
+      ],
+      "expo-video",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

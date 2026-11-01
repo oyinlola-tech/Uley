@@ -1,1 +1,2 @@
-// Small generic helpers with no domain or infrastructure ownership.
+export { writeSystemLogEntry } from './systemLog.writer.js';
+export type { WriteSystemLogEntryInput } from './systemLog.writer.js';

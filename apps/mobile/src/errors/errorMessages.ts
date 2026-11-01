@@ -1,0 +1,32 @@
+export const MOBILE_ERROR_MESSAGES = {
+  accountServiceUnavailable: 'Uley could not reach the account service. Check your connection and try again.',
+  requestFailed: 'We couldn’t complete that request. Try again.',
+  signInFailed: 'We couldn’t sign you in. Try again.',
+  accountCreationFailed: 'We couldn’t create your account. Try again.',
+  passwordChangeFailed: 'We couldn’t change your password. Try again.',
+  passwordsDoNotMatch: 'Those passwords do not match.',
+  deviceSessionCleared: 'Your device session was cleared. You may need to sign in again.',
+  listingsUnavailable: 'We couldn’t load homes right now. Check your connection and try again.',
+  inspectionsUnavailable: 'We couldn’t load inspection requests. Check your connection and try again.',
+  rentalApplicationsUnavailable: 'We couldn’t load rental applications. Check your connection and try again.',
+  rentalApplicationSubmitFailed: 'We couldn’t submit your application. Refresh and try again.',
+  rentalApplicationUpdateFailed: 'That application has changed. Refresh and try again.',
+  inspectionRequestSent: 'Your inspection request has been sent to the landlord.',
+  locationPermissionDenied: 'Location access was not granted. You can continue without sharing it.',
+  inspectionLocationUnavailable: 'Inspection location sharing could not be updated. Try again.',
+  propertyReportSent: 'Your report has been sent to the school for review.',
+  propertyImageTooLarge: 'Choose a photo that is 10 MB or smaller.',
+  propertyImageLimitReached: 'A property can have at most 12 photos, including photos waiting to upload.',
+  propertyImageStorageFailed: 'The photo could not be saved on this device. Free some storage and try again.',
+  propertyImageSignInRequired: 'Sign in again before saving property photos.',
+  propertyImageScanRejected: 'This photo did not pass the safety scan. Choose another photo.',
+  propertyImageScanUnavailable: 'The photo is still saved here. Its safety scan will resume automatically.',
+  caretakerListUnavailable: 'The assigned caretaker list could not be loaded.',
+  caretakerAssignFailed: 'The caretaker could not be assigned. Try again.',
+  caretakerRemoveFailed: 'Caretaker access could not be removed. Try again.',
+} as const;
+
+export const ADMIN_MOBILE_ERROR_MESSAGES = {
+  actionReasonRequired: 'Enter at least 10 characters to explain this action.',
+  staffCreationFailed: 'The administrator account could not be created. Try again.',
+} as const;

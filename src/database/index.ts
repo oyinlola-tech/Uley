@@ -1,5 +1,5 @@
 export {
-  closePostgresDatabaseConnection,
-  postgresConnectionPool,
-  verifyPostgresDatabaseConnection,
-} from './postgres.database.js';
+  disconnectPrismaDatabaseClient,
+  prismaDatabaseClient,
+  verifyPrismaDatabaseConnection,
+} from './prisma.database.js';

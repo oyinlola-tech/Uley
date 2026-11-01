@@ -1,2 +1,2 @@
-export type { ComplaintNotificationJobPayload } from './complaint-notification.job.js';
-export type { PropertyModerationJobPayload } from './property-moderation.job.js';
+export type { ComplaintNotificationJobPayload } from './complaintNotification.job.js';
+export type { PropertyModerationJobPayload } from './propertyModeration.job.js';

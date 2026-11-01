@@ -1,0 +1,41 @@
+export const ULEY_COLORS = {
+  primary: '#2949D8',
+  action: '#2949D8',
+  onAction: '#FFFFFF',
+  primaryDark: '#1D39B9',
+  ink: '#17243B',
+  muted: '#526179',
+  paper: '#F5F7FB',
+  surface: '#FFFFFF',
+  line: '#DCE3EF',
+  citrus: '#F4CE54',
+  trust: '#286B56',
+  paleGreen: '#EAF2E7',
+  error: '#9A3122',
+  errorSurface: '#FFF0ED',
+  successSurface: '#EAF4EE',
+  softBlue: '#EDF1FF',
+  softYellow: '#FFF5D8',
+} as const;
+
+export type UleyPalette = { [ColorName in keyof typeof ULEY_COLORS]: string };
+
+export const ULEY_DARK_COLORS: UleyPalette = {
+  ...ULEY_COLORS,
+  primary: '#91A7FF',
+  action: '#2949D8',
+  onAction: '#FFFFFF',
+  primaryDark: '#7893F5',
+  ink: '#F2F5FA',
+  muted: '#AEBBD0',
+  paper: '#0F1725',
+  surface: '#182335',
+  line: '#344258',
+  trust: '#81C8A7',
+  paleGreen: '#22352F',
+  error: '#FFB4A8',
+  errorSurface: '#432522',
+  successSurface: '#22352F',
+  softBlue: '#24314D',
+  softYellow: '#3B3420',
+};

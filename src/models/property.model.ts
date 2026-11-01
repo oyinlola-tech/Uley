@@ -1,4 +1,4 @@
-import type { PropertyStatus } from '../enums/property-status.enum.js';
+import type { PropertyStatus } from '../enums/propertyStatus.enum.js';
 
 export interface PropertyModel {
   id: string;

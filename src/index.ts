@@ -1,3 +1,1 @@
-import { startFastifyHttpServer } from './server.js';
-
-void startFastifyHttpServer();
+export { startFastifyHttpServer } from './server.js';

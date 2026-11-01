@@ -1,0 +1,25 @@
+services:
+  clamav:
+    image: clamav/clamav:stable
+    restart: unless-stopped
+    volumes:
+      - clamav_signatures:/var/lib/clamav
+
+  media-safety:
+    build:
+      context: ./apps/media
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MEDIA_CLAMAV_HOST: clamav
+      MEDIA_CLAMAV_PORT: 3310
+    depends_on:
+      - clamav
+    volumes:
+      - media_files:/data/media
+    ports:
+      - "127.0.0.1:8020:8020"
+
+volumes:
+  clamav_signatures:
+  media_files:

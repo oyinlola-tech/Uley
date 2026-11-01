@@ -1,1 +1,1 @@
-export type { ApiHealthStatus } from './health.interface.js';
+export type { ApiLivenessResponse, ApiReadinessResponse, ApiUnavailableResponse } from './health.interface.js';
